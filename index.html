@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置视口，确保在移动设备上正常显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute的个人主页</title>
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入谷歌字体 Noto Sans SC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入 Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <!-- 导航栏 -->
+    <nav>
+        <!-- 导航链接 -->
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于作者</a>
+            <a href="#changelog">更新日志</a>
+            <a href="#contact">联系方式</a>
+        </div>
+        <!-- 功能按钮组 -->
+        <div class="nav-buttons">
+            <!-- 音乐控制按钮 -->
+            <button id="music-toggle">
+                <i class="fas fa-music"></i>
+            </button>
+            <!-- 雪花效果开关按钮 -->
+            <button id="snow-toggle" onclick="toggleSnow()">
+                <i class="fas fa-snowflake"></i>
+            </button>
+            <!-- 深色模式切换按钮 -->
+            <button id="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 主页区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>欢迎来到Contribute的个人主页</h1>
+            <p>这是contribute的个人主页</p>
+            <!-- 北京时间显示区域 -->
+            <div id="beijing-time" class="time-display">
+                <i class="far fa-clock"></i>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于作者区域 -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>关于我</h2>
+            <div class="about-text">
+                <p>我是contribute</p>
+                <!-- 个人特点列表 -->
+                <ul>
+                    <li>一名数码爱好者</li>
+                    <li>白日梦想家</li>
+                    <li>thenight赞助商</li>
+                </ul>
+                <!-- 技能列表 -->
+                <p>我热爱计算机相关的一切：</p>
+                <ul>
+                    <li>前端开发</li>
+                    <li>平面设计</li>
+                    <li>影片制作</li>
+                    <li>游戏建模</li>
+                </ul>
+                <!-- 兴趣爱好 -->
+                <p>最喜欢的哔哩哔哩的主播：</p>
+                <ul>
+                    <li>影视飓风</li>
+                    <li>老师好我就何同学</li>
+                    <li>极客湾Geekerwan</li>
+                </ul>
+                <!-- 个性签名 -->
+                <p class="quote">"带着相机和好心情与世界的人环游世界"</p>
+                <p class="ending">请多指教！</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 更新日志区域 -->
+    <section id="changelog" class="changelog">
+        <div class="changelog-content">
+            <h2>小站大事记</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024年12月26日</div>
+                    <div class="timeline-content">
+                        <h3>网站 1.0 版本上线 🎉</h3>
+                        <p>- 完成基础页面设计</p>
+                        <p>- 添加深色模式切换</p>
+                        <p>- 实现雪花特效功能</p>
+                        <p>- 添加北京时间显示</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024年12月25日</div>
+                    <div class="timeline-content">
+                        <h3>网站创建 🎯</h3>
+                        <p>- 注册网站域名</p>
+                        <p>- 开始网站开发规划</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式区域 -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>联系方式</h2>
+            <!-- 邮箱列表 -->
+            <div class="email-list">
+                <p><i class="fas fa-envelope"></i> 1516603851@qq.com</p>
+                <p><i class="fas fa-envelope"></i> nbbb5463@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+
+    <!-- 在 body 标签底部添加音频元素 -->
+    <audio id="background-music" preload="auto" loop>
+        <source src="./music/等你下课.mp3" type="audio/mpeg">
+        <source src="./music/等你下课.mp3" type="audio/mp3">
+        您的浏览器不支持音频元素。
+    </audio>
+</body>
+</html>
